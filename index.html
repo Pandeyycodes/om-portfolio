@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Om – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0a0a0a;color:#fff;font-family:'Inter',sans-serif}
+.wrap{max-width:1100px;margin:60px auto;padding:40px}
+h2{font-size:22px;margin-bottom:14px}
+.lead{color:#9a9a9a;line-height:1.6}
+
+/* hero */
+.hero{display:flex;justify-content:space-between;align-items:center}
+.pfp{width:160px;height:160px;border-radius:999px;overflow:hidden}
+.pfp img{width:100%;height:100%;object-fit:cover}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 0.75;
+  letter-spacing: -1px;
+}
+
+
+/* exp cards */
+.exp-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid #1a1a1a;
+  transition: 0.25s ease;
+}
+
+.exp-item:hover {
+  background: #111;
+  padding-left: 10px;
+}
+
+.exp-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.exp-main {
+  flex: 1;
+}
+
+.exp-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.exp-sub {
+  font-size: 13px;
+  color: #9a9a9a;
+  margin-top: 4px;
+  max-width: 500px;
+}
+
+.exp-date {
+  font-size: 13px;
+  color: #8a8a8a;
+  white-space: nowrap;
+  padding-top: 4px;
+}
+
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:#111;padding:18px;border-radius:10px;border:1px solid #1c1c1c}
+.card img{width:100%;height:150px;border-radius:6px;object-fit:cover}
+.name{font-weight:700;margin-top:10px}
+.desc{color:#9a9a9a;font-size:14px;margin-top:6px}
+
+/* blog */
+.blog-item{border-bottom:1px solid #1b1b1b;padding:10px 0;color:#9a9a9a;transition:.25s}
+.blog-item:hover{padding-left:10px;color:#fff;letter-spacing:.3px}
+
+/* spotify */
+.spotify-card{background:#111;border:1px solid #1a1a1a;padding:16px;border-radius:14px;max-width:480px;margin-top:20px}
+.spotify-header{display:flex;align-items:center;gap:8px}
+.spotify-header img{width:18px;height:18px}
+.last-played{font-size:13px;color:#b3b3b3}
+.spotify-body{display:flex;gap:14px;align-items:center;margin-top:6px}
+.album-cover img{width:62px;height:62px;border-radius:6px;object-fit:cover}
+.song-title{font-weight:700}
+.song-artist{font-size:13px;color:#a5a5a5}
+
+/* contact */
+.contact{margin-top:12px;color:#9a9a9a}
+a.form-link, a.resume{color:#fff;text-decoration:underline;text-underline-offset:4px}
+
+
+.card:hover {
+  transform: translateY(-4px);
+  background: #151515;
+}
+
+.blog-item:hover {
+  padding-left: 10px;
+  color: #fff;
+  letter-spacing: .3px;
+}
+
+.exp-item:hover {
+  padding-left: 10px;
+  background: #111;
+}
+
+.spotify-card:hover {
+  border-color: #222;
+  background: #151515;
+}
+
+</style>
+</head>
+
+<body>
+<div class='wrap'>
+
+<header class='hero'>
+  <div>
+    <h1>hi, I'm om</h1>
+    <p>been here for <span id='age'>—</span> years</p>
+  </div>
+  <div class='pfp'><img src='assets/Batman_pfp.jpg'></div>
+</header>
+
+<section>
+<h2>about</h2>
+<p class='lead'>self‑taught. made things that work. kept learning.</p>
+<p class='lead'>i like tech, math, and systems. i build small, useful stuff often with ai.</p>
+<p class='lead'>these days i'm just messing around with llms. kinda fun.</p>
+<p class='lead'>here's my <a class='resume' href='Om_Pandey_Resume.pdf' download>résumé</a></p>
+</section>
+
+<section>
+<h2>education</h2>
+<p class='lead'>k. j. somaiya institute of technology — B.Tech AI & DS</p>
+</section>
+
+<section>
+  <h2>experience</h2>
+
+  <div class="exp-item">
+    <img src="assets/maharashtra.png" class="exp-logo">
+    <div class="exp-main">
+      <div class="exp-title">cybersecurity intern — Maharashtra Cyber</div>
+      <div class="exp-sub">worked with police teams on OSINT, digital forensics, and case research.</div>
+    </div>
+    <div class="exp-date">june 2024 – august 2024</div>
+  </div>
+
+  <div class="exp-item">
+    <img src="assets/intellij.png" class="exp-logo">
+    <div class="exp-main">
+      <div class="exp-title">tech intern — IntelligoEdu</div>
+      <div class="exp-sub">built internal tools, automated workflows, handled data & platform work.</div>
+    </div>
+    <div class="exp-date">september 2024 – december 2024</div>
+  </div>
+
+  <div class="exp-item">
+    <img src="assets/ai.png" class="exp-logo">
+    <div class="exp-main">
+      <div class="exp-title">ai projects — independent</div>
+      <div class="exp-sub">made things people still use. not bragging.</div>
+    </div>
+    <div class="exp-date">2023 – present</div>
+  </div>
+
+</section>
+
+
+<section>
+<h2>projects</h2>
+<div class='projects'>
+  <div class='card'><img src='assets/neuroscribe.svg'><div class='name'>NeuroScribe</div><div class='desc'>ai lecture summarizer.</div></div>
+  <div class='card'><img src='assets/aichatbot.svg'><div class='name'>AI Tax Chatbot</div><div class='desc'>hinglish tax assistant.</div></div>
+  <div class='card'><img src='assets/dripzzy.svg'><div class='name'>Dripzzy</div><div class='desc'>fashion ecommerce platform.</div></div>
+</div>
+</section>
+
+<section>
+<h2>blog</h2>
+<div class='blog-item'>why systems fail</div>
+<div class='blog-item'>building things nobody asked for</div>
+<div class='blog-item'>math, code, and the space between</div>
+</section>
+
+<section>
+<h2>currently listening</h2>
+<div class='spotify-card'>
+  <div class='spotify-header'>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg'>
+    <span class='last-played'>Last played</span>
+  </div>
+
+  <div class='spotify-body'>
+    <div class='album-cover'><img src='assets/hua.png'></div>
+    <div>
+      <div class='song-title'>Hua Main</div>
+      <div class='song-artist'>Animal</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>work with me</h2>
+<p class='lead'>if you want something built, here's the form:</p>
+<p><a class='form-link' href='https://docs.google.com/forms/d/e/1FAIpQLSc8dpMfWUoByPrQIKvTDgKI08DFWqkF0cJKle32tbkzlJ6OWA/viewform' target='_blank'>open google form</a></p>
+</section>
+
+</div>
+
+<script>
+function age(){
+ let d=new Date('2004-12-14'); 
+ let n=new Date();
+ document.getElementById('age').textContent=((n-d)/31557600000).toFixed(9);
+}
+age(); setInterval(age,1000);
+</script>
+
+</body>
+</html>
