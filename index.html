@@ -138,17 +138,64 @@ a.form-link, a.resume{color:#fff;text-decoration:underline;text-underline-offset
   font-size: 15px;
   color: #777;
 }
+.freelance-gigs {
+  margin-top: 80px;
+}
 
+.freelance-text {
+  font-size: 16px;
+  color: #9a9a9a;
+  line-height: 1.7;
+  max-width: 650px;
+  margin-bottom: 28px;
+}
+
+.freelance-contact p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.freelance-label {
+  color: #666;
+  margin-right: 6px;
+}
+
+.freelance-value {
+  color: #fff;
+  font-weight: 500;
+}
+
+.skills-section {
+  margin-top: 80px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #ffffff;
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.25s ease;
+  white-space: nowrap;
+}
+
+.skill-tag:hover {
+  background: #e5e5e5;
+  transform: translateY(-2px);
+}
 
 </style>
 </head>
 <!-- Quote Section -->
-<section class="footer-quote">
-  <p class="quote-text">
-    “The purpose of life is to be defeated by greater and greater things.”
-  </p>
-  <p class="quote-author">— Rainer Maria Rilke</p>
-</section>
+
 
 <body>
 <div class='wrap'>
@@ -244,10 +291,54 @@ a.form-link, a.resume{color:#fff;text-decoration:underline;text-underline-offset
 
 <section>
 <h2>work with me</h2>
-<p class='lead'>if you want something built, here's the form:</p>
+<p class='lead'>only if you’re serious.</p>
 <p><a class='form-link' href='https://docs.google.com/forms/d/e/1FAIpQLSc8dpMfWUoByPrQIKvTDgKI08DFWqkF0cJKle32tbkzlJ6OWA/viewform' target='_blank'>open google form</a></p>
 </section>
+<section class="section freelance-gigs">
+  <h2>freelancing gigs</h2>
 
+  <p class="freelance-text">
+    i’ll take on pretty much anything from solving cases to building llm-powered tools.  
+    if it pays well, i’m in.  
+    and if i don’t know how to do it… don’t worry, i know a guy.  
+    or i know a guy who knows a guy.  
+    point is your work gets done. no excuses.
+  </p>
+
+  <div class="freelance-contact">
+    <p><span class="freelance-label">email:</span> <span class="freelance-value">raj221409@gmail.com</span></p>
+    <p><span class="freelance-label">phone:</span> <span class="freelance-value">7977099026</span></p>
+  </div>
+</section>
+<section class="section skills-section">
+  <h2>skills</h2>
+
+  <div class="skills-container">
+    <!-- serious -->
+    <span class="skill-tag">python</span>
+    <span class="skill-tag">react</span>
+    <span class="skill-tag">llms and prompt engineering</span>
+    <span class="skill-tag">data analysis</span>
+    <span class="skill-tag">debugging</span>
+
+    <!-- personality -->
+    <span class="skill-tag">ships fast</span>
+    <span class="skill-tag">caffeine powered</span>
+    <span class="skill-tag">can learn anything in 24 hours (if paid enough)</span>
+
+    <!-- fun -->
+    <span class="skill-tag">knows a guy™</span>
+    <span class="skill-tag">breaks things to understand them</span>
+  </div>
+</section>
+
+
+<section class="footer-quote">
+  <p class="quote-text">
+    “The purpose of life is to be defeated by greater and greater things.”
+  </p>
+  <p class="quote-author">— Rainer Maria Rilke</p>
+</section>
 </div>
 
 <script>
